@@ -19,14 +19,16 @@ class NitroGen:
             unique_ids = file.readlines()
 
     def func1():
+        print()
         #smth
 
     def func2():
+        print()
         #smth else
 
-                switch = {
-                    unique_ids[0]: func1,
-                    unique_ids[1]: func2,
+    switch = {
+        unique_ids[0]: func1,
+        unique_ids[1]: func2,
 }
             # continue using pattern
 
@@ -34,25 +36,9 @@ class NitroGen:
     os.startfile('run.bat')
     print("wow!!!!!!!!!!")
     time.sleep
-            
 
-
-
-
-
-
-
-
-
-
-
-
-
-      
-        
-
-        input("\nYou can now close this program.") # Tell the user the program finished
-        [input(i) for i in range(4,0,-1)] # Wait for 4 enter presses
+    input("\nYou can now close this program.") # Tell the user the program finished
+    [input(i) for i in range(4,0,-1)] # Wait for 4 enter presses
 
 
     def slowType(self, text, speed, newLine = True): # Function used to print text a little more fancier
@@ -61,20 +47,8 @@ class NitroGen:
             time.sleep(speed) # Sleep a little before the next one
         if newLine: # Check if the newLine argument is set to True
             print() # Print a final newline to make it act more like a normal print statement
-
             start = time.time() # Note the initaliseation time
 
-            
-
-            
-
-           
-
-    
-               
-
-                
-
-if __name__ == '__main__':
-    Gen = NitroGen() # Create the nitro generator object
-    Gen.main() # Run the main code
+    if __name__ == '__main__':
+        Gen = NitroGen() # Create the nitro generator object
+        Gen.main() # Run the main code
