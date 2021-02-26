@@ -32,13 +32,13 @@ class NitroGen:
         input("\nYou can now close this program.")
         [input(i) for i in range(4, 0, -1)]
 
-        def slowType(self, text, speed, newLine = True):
-            for i in text:
-                print(i, end = "", flush = True)
-                time.sleep(speed)
-            if newLine:
-                print()
-                start = time.time()
+    def slowType(self, text, speed, newLine = True):
+        for i in text:
+            print(i, end = "", flush = True)
+            time.sleep(speed)
+        if newLine:
+            print()
+            start = time.time()
     if __name__ == '__main__':
         Gen = NitroGen()
         Gen.main()
