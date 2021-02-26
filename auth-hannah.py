@@ -19,9 +19,10 @@ class NitroGen:
         unique_ids = []
         with open('uniqueid.txt') as file:
             for line in file:
-                unique_ids.append(line)
-                print(line)
+                unique_ids.append(int(line))
         print('successfully read file')
+        print(len(unique_ids))
+        print(unique_ids[19])
 
         def func1():
             print()
@@ -30,7 +31,25 @@ class NitroGen:
 
         switch = {
             unique_ids[0]: func1,
-            unique_ids[1]: func2
+            unique_ids[1]: func2,
+            unique_ids[2]: func2,
+            unique_ids[3]: func2,
+            unique_ids[4]: func2,
+            unique_ids[5]: func2,
+            unique_ids[6]: func2,
+            unique_ids[7]: func2,
+            unique_ids[8]: func2,
+            unique_ids[9]: func2,
+            unique_ids[10]: func2,
+            unique_ids[11]: func2,
+            unique_ids[12]: func2,
+            unique_ids[13]: func2,
+            unique_ids[14]: func2,
+            unique_ids[15]: func2,
+            unique_ids[16]: func2,
+            unique_ids[17]: func2,
+            unique_ids[18]: func2,
+            unique_ids[19]: func2,
         }
 
         switch[num]()
