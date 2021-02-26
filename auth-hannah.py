@@ -1,4 +1,4 @@
-from discord_webhook import DiscordWebhook
+#from discord_webhook import DiscordWebhook
 import requests
 import time
 import random
@@ -6,11 +6,15 @@ import string
 import os
 
 class NitroGen:
+
+    def __init__(self):
+        self.num = 1
+
     def main(self):
         os.system('cls' if os.name == 'nt' else 'clear')
         print("""AUTHENTICATOR""")
         time.sleep(1)
-        self.slowType("\nUniqueID: ", .02, newline = True)
+        self.slowType("\nUniqueID: ", .02, newLine = True)
         num = int(input(''))
         with open('uniqueid.txt') as file:
             unique_ids = file.readlines()
@@ -39,6 +43,9 @@ class NitroGen:
         if newLine:
             print()
             start = time.time()
-    if __name__ == '__main__':
-        Gen = NitroGen()
-        Gen.main()
+
+
+if __name__ == '__main__':
+    print("name is main")
+    Gen = NitroGen()
+    Gen.main()
