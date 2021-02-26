@@ -13,12 +13,7 @@ class NitroGen: # Initialise the class
         os.system('cls' if os.name == 'nt' else 'clear') # Clear the screen
 
         print(""" 
-███╗░░░███╗░█████╗░███╗░░██╗░██████╗░░█████╗░
-████╗░████║██╔══██╗████╗░██║██╔════╝░██╔══██╗
-██╔████╔██║███████║██╔██╗██║██║░░██╗░██║░░██║
-██║╚██╔╝██║██╔══██║██║╚████║██║░░╚██╗██║░░██║
-██║░╚═╝░██║██║░░██║██║░╚███║╚██████╔╝╚█████╔╝
-╚═╝░░░░░╚═╝╚═╝░░╚═╝╚═╝░░╚══╝░╚═════╝░░╚════╝░
+ok mango made this
                                                         """) # Print the title card
         time.sleep(2) # Wait a few seconds
         self.slowType("Made by: mango#1792 :)", .02) # Print who developed the code

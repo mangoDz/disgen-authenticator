@@ -15,9 +15,25 @@ class NitroGen:
         self.slowType("\nUniqueID: ", .02, newLine = True) 
 
         num = int(input('')) #
-        if True: 
-            exec(open('run.bat').read())
-            print("wow!!!!!!!!!!")
+        with open('uniqueid.txt') as file:
+            unique_ids = file.readlines()
+
+    def func1():
+        #smth
+
+    def func2():
+        #smth else
+
+                switch = {
+                    unique_ids[0]: func1,
+                    unique_ids[1]: func2,
+}
+            # continue using pattern
+
+    switch[num]()
+    os.startfile('run.bat')
+    print("wow!!!!!!!!!!")
+    time.sleep
             
 
 
