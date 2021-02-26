@@ -16,8 +16,12 @@ class NitroGen:
         time.sleep(1)
         self.slowType("\nUniqueID: ", .02, newLine = True)
         num = int(input(''))
+        unique_ids = []
         with open('uniqueid.txt') as file:
-            unique_ids = file.readlines()
+            for line in file:
+                unique_ids.append(line)
+                print(line)
+        print('successfully read file')
 
         def func1():
             print()
@@ -42,8 +46,6 @@ class NitroGen:
             time.sleep(speed)
         if newLine:
             print()
-            start = time.time()
-
 
 if __name__ == '__main__':
     print("name is main")
